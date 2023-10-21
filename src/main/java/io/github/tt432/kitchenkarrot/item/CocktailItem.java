@@ -1,11 +1,13 @@
 package io.github.tt432.kitchenkarrot.item;
 
 import io.github.tt432.kitchenkarrot.Kitchenkarrot;
+import io.github.tt432.kitchenkarrot.client.cocktail.CocktailList;
 import io.github.tt432.kitchenkarrot.config.ModCommonConfigs;
 import io.github.tt432.kitchenkarrot.recipes.object.EffectStack;
 import io.github.tt432.kitchenkarrot.recipes.recipe.CocktailRecipe;
 import io.github.tt432.kitchenkarrot.registries.RecipeTypes;
 import io.github.tt432.kitchenkarrot.registries.ModItems;
+import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -13,10 +15,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.Level;
@@ -36,6 +35,17 @@ public class CocktailItem extends Item {
 
     public CocktailItem() {
         super(ModItems.defaultProperties().food(new FoodProperties.Builder().alwaysEat().build()));
+    }
+
+    @Override
+    public void fillItemCategory(CreativeModeTab creativeModeTab, NonNullList<ItemStack> list) {
+        if (creativeModeTab == ModItems.COCKTAIL_TAB) {
+            for (String cocktail : CocktailList.INSTANCE.cocktails) {
+                ItemStack stack = new ItemStack(this);
+                setCocktail(stack, new ResourceLocation(cocktail));
+                list.add(stack);
+            }
+        }
     }
 
     public static ItemStack unknownCocktail() {
