@@ -1,0 +1,36 @@
+{
+  "parent": "kitchenkarrot:root",
+  "display": {
+    "icon": {
+      "item": "kitchenkarrot:plate_item"
+    },
+    "title": {
+      "translate": "advancement.kitchenkarrot.place_plate.title"
+    },
+    "description": {
+      "translate": "advancement.kitchenkarrot.place_plate.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "plate": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "block": "kitchenkarrot:plate",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "plate"
+    ]
+  ]
+}

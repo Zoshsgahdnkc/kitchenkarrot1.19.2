@@ -1,0 +1,38 @@
+{
+  "parent": "kitchenkarrot:place_air_compressor",
+  "display": {
+    "icon": {
+      "item": "kitchenkarrot:dragon_breath_coke"
+    },
+    "title": {
+      "translate": "advancement.kitchenkarrot.drink_dgcoke.title"
+    },
+    "description": {
+      "translate": "advancement.kitchenkarrot.drink_dgcoke.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "coke": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "kitchenkarrot:dragon_breath_coke"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "coke"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

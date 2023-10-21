@@ -1,0 +1,99 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "kitchenkarrot:block/plates/rice_cake",
+		"particle": "kitchenkarrot:block/plates/rice_cake"
+	},
+	"elements": [
+		{
+			"from": [5, 2, 6],
+			"to": [10, 3.5, 9],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [9, 2, 8]},
+			"faces": {
+				"north": {"uv": [11, 15.5, 13, 16], "texture": "#0"},
+				"east": {"uv": [11, 15, 12, 15.5], "texture": "#0"},
+				"south": {"uv": [11, 15.5, 13, 16], "texture": "#0"},
+				"west": {"uv": [11, 15, 12, 15.5], "texture": "#0"},
+				"up": {"uv": [11, 13, 12, 15], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [11, 13, 12, 15], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 0, 3],
+			"to": [13, 1, 13],
+			"faces": {
+				"north": {"uv": [8, 12, 13, 12.5], "texture": "#0"},
+				"east": {"uv": [8, 12, 13, 12.5], "texture": "#0"},
+				"south": {"uv": [8, 12, 13, 12.5], "texture": "#0"},
+				"west": {"uv": [8, 12, 13, 12.5], "texture": "#0"},
+				"down": {"uv": [8, 7, 13, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 1, 1],
+			"to": [15, 2, 15],
+			"faces": {
+				"north": {"uv": [0, 7, 7, 7.5], "texture": "#0"},
+				"east": {"uv": [0, 7, 7, 7.5], "texture": "#0"},
+				"south": {"uv": [0, 7, 7, 7.5], "texture": "#0"},
+				"west": {"uv": [0, 7, 7, 7.5], "texture": "#0"},
+				"up": {"uv": [0, 0, 7, 7], "texture": "#0"},
+				"down": {"uv": [8, 0, 15, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 2.001, 1],
+			"to": [15, 2.001, 15],
+			"faces": {
+				"up": {"uv": [0, 8, 7, 15], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [49, 0, 0],
+			"translation": [0, 3.75, 3],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [49, 0, 0],
+			"translation": [0, 3.75, 3],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, 10],
+			"translation": [1.13, 6.95, 0.13],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 0, 10],
+			"translation": [1.13, 6.95, 0.13],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [0.66, 0.66, 0.66]
+		},
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 14.25, 0]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"groups": [
+		0,
+		{
+			"name": "plate",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [1, 2]
+		},
+		3
+	]
+}

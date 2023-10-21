@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kitchenkarrot:gem_carrot"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "tag": "kitchenkarrot:grass_spices"
+    }
+  ],
+  "result": {
+    "item": "kitchenkarrot:carrot_spices",
+    "count": 4
+  }
+}

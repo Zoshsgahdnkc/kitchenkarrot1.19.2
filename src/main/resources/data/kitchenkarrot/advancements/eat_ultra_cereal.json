@@ -1,0 +1,38 @@
+{
+  "parent": "kitchenkarrot:use_knife",
+  "display": {
+    "icon": {
+      "item": "kitchenkarrot:ultra_super_delicious_cereal_porridge"
+    },
+    "title": {
+      "translate": "advancement.kitchenkarrot.eat_ultra_cereal.title"
+    },
+    "description": {
+      "translate": "advancement.kitchenkarrot.eat_ultra_cereal.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ultra_cereal": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "kitchenkarrot:ultra_super_delicious_cereal_porridge"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ultra_cereal"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "kitchenkarrot:acorn"
+    },
+    {
+      "tag": "forge:salt"
+    }
+  ],
+  "result": {
+    "item": "kitchenkarrot:beetroot_crepe"
+  }
+}

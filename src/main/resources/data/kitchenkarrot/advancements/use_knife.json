@@ -1,0 +1,38 @@
+{
+  "parent": "kitchenkarrot:place_plate",
+  "display": {
+    "icon": {
+      "item": "kitchenkarrot:knife"
+    },
+    "title": {
+      "translate": "advancement.kitchenkarrot.use_knife.title"
+    },
+    "description": {
+      "translate": "advancement.kitchenkarrot.use_knife.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "criteria": {
+    "knife": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "kitchenkarrot:knife"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "knife"
+    ]
+  ]
+}
